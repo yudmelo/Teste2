@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Golden Pet | Clínica Veterinária Popular em Fortaleza</title>
+<meta name="description" content="Clínica veterinária no Novo Mondubim, Fortaleza: consultas, exames, cirurgias, internação, banho e tosa e loja pet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#fff;--soft:#f2f6f5;--ink:#15292b;--mute:#52696b;--teal:#1d6b68;--teal-d:#14504e;--on-teal:#fff;--gold:#e4a11b;--line:#dbe4e2;--tint:#d9ece9;--paw:#1d6b68;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1c1d;--soft:#162a2b;--ink:#eaf2f1;--mute:#9db5b3;--teal:#5fc0b9;--teal-d:#7dd2cb;--on-teal:#0b1a1b;--line:#27403f;--tint:#1c3a39;--paw:#5fc0b9}}
+:root[data-theme="dark"]{--bg:#0f1c1d;--soft:#162a2b;--ink:#eaf2f1;--mute:#9db5b3;--teal:#5fc0b9;--teal-d:#7dd2cb;--on-teal:#0b1a1b;--line:#27403f;--tint:#1c3a39;--paw:#5fc0b9}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 'Figtree',system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque','Figtree',sans-serif;font-weight:700;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.25rem;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand svg{width:28px;height:28px}
+nav{display:flex;align-items:center;gap:28px;font-weight:500;font-size:.95rem}
+nav a.l{text-decoration:none;color:var(--mute)}nav a.l:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;background:var(--teal);color:var(--on-teal);font-weight:600;text-decoration:none;border:2px solid var(--teal);transition:background .15s}
+.btn:hover{background:var(--teal-d);border-color:var(--teal-d)}
+.btn.o{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.o:hover{border-color:var(--ink);background:transparent}
+.btn.s{padding:10px 16px;font-size:.95rem}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:56px 0 88px}
+h1{font-size:clamp(2.3rem,5.4vw,3.8rem)}
+.hero p.lead{font-size:1.2rem;color:var(--mute);max-width:46ch;margin:22px 0 32px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.rate{display:flex;align-items:center;gap:12px;margin-top:32px;color:var(--mute);font-size:.98rem}
+.stars{color:var(--gold);letter-spacing:2px;font-size:1.1rem}
+.rate b{color:var(--ink)}
+.art{background:var(--tint);border-radius:28px;aspect-ratio:1/1;display:grid;place-items:center;position:relative;overflow:hidden}
+.art svg.paw{width:62%;height:auto}
+.art .tag{position:absolute;left:20px;bottom:20px;right:20px;background:var(--bg);border-radius:14px;padding:14px 18px;display:flex;justify-content:space-between;gap:12px;font-size:.95rem;box-shadow:0 1px 0 var(--line)}
+.tag b{display:block;font-size:1rem}.tag span{color:var(--mute)}
+section{padding:80px 0}
+.soft{background:var(--soft)}
+h2{font-size:clamp(1.8rem,3.8vw,2.6rem);max-width:20ch}
+.sub{color:var(--mute);max-width:56ch;margin:16px 0 0}
+.why{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px}
+.why div{padding:0 32px;border-left:1px solid var(--line)}
+.why div:first-child{padding-left:0;border-left:0}
+.why h3{font-size:1.25rem;margin-bottom:10px}
+.why p{margin:0;color:var(--mute)}
+.svc{margin-top:40px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:260px 1fr;gap:32px;padding:28px 0;border-bottom:1px solid var(--line)}
+.row h3{font-size:1.2rem}
+.row ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.row li{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:.98rem}
+.rev{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center}
+.big{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(4.5rem,12vw,7rem);line-height:1;letter-spacing:-.04em}
+.rev p{margin:8px 0 0;color:var(--mute);max-width:46ch}
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+dl{margin:32px 0;display:grid;gap:20px}
+dt{font-weight:600;margin-bottom:2px}dd{margin:0;color:var(--mute)}
+.map{background:var(--tint);border-radius:20px;min-height:320px;display:grid;place-items:center;text-align:center;padding:32px}
+.map p{margin:0 0 18px;color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:820px){
+.hero,.loc{grid-template-columns:1fr;gap:40px}.hero{padding:32px 0 56px}
+.art{aspect-ratio:4/3}.why{grid-template-columns:1fr;gap:28px}.why div{padding:0;border:0}
+.row{grid-template-columns:1fr;gap:14px}.rev{grid-template-columns:1fr;gap:16px}
+nav a.l{display:none}section{padding:56px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="#topo" id="topo"><svg viewBox="0 0 32 32" aria-hidden="true"><g fill="#e4a11b"><ellipse cx="16" cy="21" rx="7" ry="6"/><ellipse cx="6.5" cy="14" rx="3" ry="4"/><ellipse cx="25.5" cy="14" rx="3" ry="4"/><ellipse cx="12" cy="7.5" rx="3" ry="4"/><ellipse cx="20" cy="7.5" rx="3" ry="4"/></g></svg>Golden Pet</a>
+<nav><a class="l" href="#servicos">Serviços</a><a class="l" href="#avaliacoes">Avaliações</a><a class="l" href="#contato">Como chegar</a><a class="btn s" data-wa href="#contato">WhatsApp</a></nav>
+</div></header>
+
+<main>
+<div class="wrap hero">
+<div>
+<h1>Veterinária completa para o seu pet, perto de você.</h1>
+<p class="lead">Consultas, exames, cirurgias, internação, banho e tosa e loja pet, tudo no Novo Mondubim, em Fortaleza.</p>
+<div class="cta"><a class="btn" data-wa href="#contato">Chamar no WhatsApp</a><a class="btn o" href="#servicos">Ver serviços</a></div>
+<div class="rate"><span class="stars" aria-hidden="true">★★★★★</span><span><b>4,8</b> no Google, com 152 avaliações</span></div>
+</div>
+<div class="art" role="img" aria-label="Ilustração de uma pata">
+<svg class="paw" viewBox="0 0 200 200" aria-hidden="true"><g fill="var(--paw)"><ellipse cx="100" cy="132" rx="46" ry="38"/><ellipse cx="40" cy="88" rx="19" ry="26"/><ellipse cx="160" cy="88" rx="19" ry="26"/><ellipse cx="72" cy="40" rx="19" ry="27"/><ellipse cx="128" cy="40" rx="19" ry="27"/></g></svg>
+<div class="tag"><div><b>Clínica Veterinária Popular</b><span>R. Santa Mônica, 561</span></div><div><b>Até 18h</b><span>Abre às 8h</span></div></div>
+</div>
+</div>
+
+<section class="soft"><div class="wrap">
+<h2>Do diagnóstico ao tratamento, em um só lugar</h2>
+<div class="why">
+<div><h3>Exames na própria clínica</h3><p>Raio-X, ultrassonografia, eletrocardiograma, ecocardiograma e exames laboratoriais para chegar ao diagnóstico mais rápido.</p></div>
+<div><h3>Especialistas para casos delicados</h3><p>Dermatologia, oncologia, nefrologia, oftalmologia e odontologia veterinária, com internação quando for preciso.</p></div>
+<div><h3>Atenção para gatos</h3><p>Atendimento especializado para felinos, com cuidado no manejo e no ambiente da consulta.</p></div>
+</div>
+</div></section>
+
+<section id="servicos"><div class="wrap">
+<h2>Serviços</h2>
+<p class="sub">Da consulta de rotina à cirurgia, e também banho, tosa e produtos para o dia a dia.</p>
+<div class="svc">
+<div class="row"><h3>Consultas e prevenção</h3><ul><li>Consulta veterinária</li><li>Vacinação</li><li>Atendimento especializado para gatos</li></ul></div>
+<div class="row"><h3>Exames e diagnóstico</h3><ul><li>Exames laboratoriais</li><li>Raio-X</li><li>Ultrassonografia</li><li>Eletrocardiograma</li><li>Ecocardiograma</li></ul></div>
+<div class="row"><h3>Especialidades</h3><ul><li>Dermatologia</li><li>Oncologia</li><li>Nefrologia</li><li>Oftalmologia</li><li>Odontologia veterinária</li></ul></div>
+<div class="row"><h3>Cirurgia e internação</h3><ul><li>Cirurgia veterinária</li><li>Castração</li><li>Internação</li></ul></div>
+<div class="row"><h3>Pet shop</h3><ul><li>Banho e tosa</li><li>Farmácia veterinária</li><li>Loja pet</li></ul></div>
+</div>
+</div></section>
+
+<section class="soft" id="avaliacoes"><div class="wrap rev">
+<div class="big">4,8</div>
+<div><div class="stars" aria-hidden="true">★★★★★</div><h2 style="margin-top:8px;max-width:24ch">Tutores que confiam na Golden Pet</h2><p>Nota média no Google com base em 152 avaliações. Veja o que os tutores dizem e deixe a sua.</p><p style="margin-top:20px"><a class="btn o" id="rev" target="_blank" rel="noopener" href="#">Ver avaliações no Google</a></p></div>
+</div></section>
+
+<section id="contato"><div class="wrap loc">
+<div>
+<h2>Venha nos visitar</h2>
+<dl>
+<div><dt>Endereço</dt><dd>R. Santa Mônica, 561<br>Novo Mondubim, Fortaleza - CE<br>CEP 60763-780</dd></div>
+<div><dt>Horário</dt><dd>Atendimento até as 18h e reabertura às 8h. Confirme os dias de funcionamento pelo WhatsApp.</dd></div>
+</dl>
+<div class="cta"><a class="btn" data-wa href="#contato">Chamar no WhatsApp</a><a class="btn o" id="rota" target="_blank" rel="noopener" href="#">Como chegar</a></div>
+</div>
+<div class="map"><div><p>R. Santa Mônica, 561 · Novo Mondubim</p><a class="btn" id="mapa" target="_blank" rel="noopener" href="#">Abrir no Google Maps</a></div></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>Clínica Veterinária Popular Golden Pet</span><span>R. Santa Mônica, 561 · Fortaleza - CE</span></div></footer>
+
+<script>
+(function(){
+var WHATSAPP=""; /* ex.: 5585999999999 (código do país + DDD + número) */
+var q=encodeURIComponent("Clínica Veterinária Popular Golden Pet, R. Santa Mônica, 561, Novo Mondubim, Fortaleza - CE");
+var maps="https://www.google.com/maps/search/?api=1&query="+q;
+document.getElementById("mapa").href=maps;
+document.getElementById("rota").href="https://www.google.com/maps/dir/?api=1&destination="+q;
+document.getElementById("rev").href=maps;
+if(WHATSAPP){
+var msg=encodeURIComponent("Olá! Gostaria de agendar um atendimento na Golden Pet.");
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href="https://wa.me/"+WHATSAPP+"?text="+msg;a.target="_blank";a.rel="noopener";});
+}
+})();
+</script>
+</body>
+</html>
